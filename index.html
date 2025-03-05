@@ -1,235 +1,141 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carnicería JMR</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: white;
-
-        }
-        nav {
-            background: rgba(0, 0, 0, 0.5);
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-        }
-        header {
-            background-image: url("./superior.jpg");
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contenedor {
-            max-width: 65%;
-            margin: -50px auto 20px;
-            background: white;
-            position: relative;
-            z-index: 10;
-            margin-top: -280px;
-        }
-        .presentation {
-            text-align: center;
-            padding: 40px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 15px;
-            max-width: 90%;
-            margin: auto;
-            margin-top: 80px;
-        }
-        .box {
-            background: white;
-            text-align: center;
-        }
-        .box img {
-            max-width: 100%;
-        }
-        .social-icons {
-            display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px; /* Ajuste fino para que los iconos estén más juntos */
-    padding: 20px; /* Reducimos el padding */
-        }
-        .social-icons img {
-    width: 80px; /* Ajustar el tamaño de los iconos */
-    height: 80px;
-    margin: 0;
-    margin-top: 60px;
-}
-        .contact-form {
-    background-color: grey;
-    max-width: 62%; 
-    margin:  0 auto; /* Se sube el formulario */
-    position: relative;
-    padding: 25px;
-    z-index: 20; /* Asegura que esté encima de la imagen del footer */
-    margin-top: 120px;
-    height: 55vh;
-}
-.contact-form label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1.4rem;
-}
-#mensaje{
-    margin-left: 20px;
-}
-
-.contact-form .form-group {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px; /* Espacio entre email y teléfono */
-    width: 93%;
-    height: 22vh;
-   
-}
-
-.contact-form .form-group div {
-    flex: 1; /* Ambos elementos ocupan el mismo ancho */
-    margin-top: 60px;
-    margin-left: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: white;
-    font-size: 14px;
-    height: 3vh;
-}
-
-.contact-form textarea {
-    height: 20vh; 
-    resize: none;
-    margin-left: 0px;
-    width: 91% ;
-    font-family: sans-serif;
-}
-
-.contact-form button {
-    background: black;
-    color: white;
-    padding: 10px 15px;
-    font-size: 12px;
-    border: 2.5px solid white; /* Agrega un borde blanco */
-    cursor: pointer;
-    display: block;
-    margin-top: 10px;
-    text-transform: uppercase;
-    margin-left: 810px;
-}
-
-.footer-image {
-    position: relative;
-    margin-top: -100px; /* Se sube la imagen para reducir el espacio vacío */
-    width: 100%;
-    margin-bottom: -10px;
-    
-}
-    
-        footer {
-            background: black;
-            color: white;
-            text-align: center;
-            padding: 7px;
-            font-size: 14px;
-            position: relative;
-          
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/resources/css/reset.css">
+  <link rel="stylesheet" href="/resources/css/main.css">
+  <title>2C</title>
 </head>
 <body>
-   
- <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Servicios</a>
-    <a href="#">Productos</a>
-    <a href="#">Tienda</a>
-</nav>
-<header></header>
-
-<div class="contenedor">
-
-    
-    <div class="presentation">
-        <h2>PRESENTACIÓN</h2>
-        <p>En Carnicerías ACME ponemos a su disposición las mejores carnes, embutidos y platos preparados, entre otras delicias gourmet. Si tienen un evento y quieren deleitar a sus invitados con unos productos sanos, frescos y sabrosos, contacten con nosotros.</p>
-        <h3>Reparto a domicilio</h3>
-        <p>Realicen su pedido hoy mismo y mañana lo tendrán listo en su domicilio.</p>
-        <h3>Corte tradicional</h3>
-        <p>No tenemos bandejas preparadas. Nuestro corte es artesano y profesional.</p>
+  <img src="/resources/img/superior.jpg" alt="superior" class="bannerImgTop notIntractable">
+  <div class="bgWhite"></div>
+  <img src="/resources/img/inferior.jpg" alt="inferior" class="bannerImgBot notIntractable">
+  <header>
+    <nav>
+      <div class="navScreen">
+        <div class="navItem">INICIO</div>
+        <div class="navItem">SERVICIO</div>
+        <div class="navItem">PRODUCTOS</div>
+        <div class="navItem">TIENDAS</div>
+      </div>
+      <div class="navMobile">
+        <div class="navItem nobr">
+          <svg class="menu" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 24.75 24.75" xml:space="preserve">
+            <g><path d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2   c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2   c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z"/></g>
+          </svg>
+        </div>
+        <div class="navItem nobr">MENU</div>
+      </div>
+    </nav>
+  </header>
+  <div class="main">
+    <h1>PRESENTACIÓN</h1>
+    <p>
+      En Carnicerías ACME ponemos a su disposición las mejores carnes, 
+      embutidos y platos preparados, entre otras delicias gourmet. Si 
+      tienen un evento y quieren deleitar a sus invitados con unos productos 
+      sanos, frescos y sabrosos, contacten con nosotros.
+    </p>
+    <h2>Reparto a domicilio</h2>
+    <p>
+      Realicen su pedido hoy mismo y mañana lo tendrán listo en su domicilio.
+    </p>
+    <h2>Corte tradicional</h2>
+    <p>
+      No tenemos bandejas preparadas. Nuestro corte es artesano y profesional.
+    </p>
+    <div class="midSec">
+      <div class="midSecItem">
+        <h2>Calidad</h2>
+        <img src="/resources/img/carne.jpg" alt="carne" class="midSecImg">
+        <p>
+          Carne de calidad de los valles pirenaicos. Con las mejores garantías de 
+          sanidad y sabor.
+        </p>
+      </div>
+      <div class="midSecItem">
+        <h2>Servicio 24h</h2>
+        <img src="/resources/img/entrega.jpg" alt="entrega" class="midSecImg">
+        <p>
+          En nuestro transporte refigurado garantizamos que cumpliremos en 24h con 
+          nuestros compromisos.
+        </p>
+      </div>
+      <div class="midSecItem">
+        <h2>Restauración</h2>
+        <img src="/resources/img/restaurantes.jpg" alt="restaurantes" class="midSecImg">
+        <p>
+          Servimos a los mejores restaurantes de Zaragoza. Si regentas un local de 
+          restauración llámanos.
+        </p>
+      </div>
+      <div class="midSecItem">
+        <h2>Charcutería</h2>
+        <img src="/resources/img/charcuteria.jpg" alt="charcuteria" class="midSecImg">
+        <p>
+          Los mejores ejemplares de jamón ibérico y embutidos tradicionales. 
+          Especialistas en charcutería.
+        </p>
+      </div>
     </div>
-    <section class="grid">
-        <div class="box">
-            <img src="carne.jpg" alt="Calidad">
-            <h2>Calidad</h2>
-            <p>Carne de calidad de los valles pirenáicos. Con las mejores garantías de sanidad y sabor.</p>
-        </div>
-        <div class="box">
-            <img src="entrega.jpg" alt="Servicio 24h">
-            <h2>Servicio 24h</h2>
-            <p>En nuestro transporte refigerado garantizamos que cumpliremos en 24h con nuestros compromisos.</p>
-        </div>
-        <div class="box">
-            <img src="restaurantes.jpg" alt="Restauración">
-            <h2>Restauración</h2>
-            <p>Servimos a los mejores restaurantes de Zaragoza. Si regentas un local de restauración llámanos.</p>
-        </div>
-        <div class="box">
-            <img src="charcuteria.jpg" alt="Charcutería">
-            <h2>Charcutería</h2>
-            <p>En nuestro transporte refigerado garantizamos que cumpliremos en 24h con nuestros compromisos.</p>
-        </div>
-    </section>
-    <div class="social-icons">
-        <img src="facebook.jpg">
-        <img src="maps.jpg">
-        <img src="google.jpg">
+    <div class="linkSec">
+      <div class="linkSecItem">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 72 72">
+            <path d="M36,12c13.234,0,24,10.766,24,24c0,11.941-8.767,21.87-20.203,23.695V41.981h5.445l0.814-6.004h-6.259	c0,0,0-3.625,0-4.546c0-1.8,1.217-2.725,2.51-2.725c1.293,0,3.97-0.037,3.97-0.037v-5.808c0,0-2.382-0.275-4.814-0.275	c-2.044,0-4.295,0.576-6.097,2.43c-1.833,1.886-2.096,4.13-2.096,7.527c0,0.983,0,3.435,0,3.435h-5.458v6.004h5.458V59.84	C21.318,58.48,12,48.31,12,36C12,22.766,22.766,12,36,12z"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="linkSecItem">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 72 72">
+            <path fill="#060000" d="M35.891,12.966c13.236,0,24.003,10.768,24.003,24.003S49.127,60.973,35.891,60.973	S11.888,50.205,11.888,36.969S22.656,12.966,35.891,12.966z M30.087,46.028c5.04,0,9.14-4.064,9.14-9.059	c0-1.063-0.862-1.924-1.924-1.924h-6.584c-1.063,0-1.924,0.862-1.924,1.924s0.862,1.924,1.924,1.924h4.286	c-0.779,1.923-2.69,3.286-4.918,3.286c-2.917,0-5.292-2.337-5.292-5.21c0-2.873,2.374-5.21,5.292-5.21c1.129,0,2.206,0.346,3.116,1	c0.864,0.622,2.066,0.424,2.685-0.438c0.621-0.863,0.425-2.065-0.438-2.686c-1.568-1.128-3.422-1.724-5.363-1.724	c-5.04,0-9.14,4.064-9.14,9.059S25.047,46.028,30.087,46.028z M49.062,38.99c1.07,0,1.938-0.868,1.938-1.938	c0-1.07-0.868-1.938-1.938-1.938h-0.92v-1.405c0-1.07-0.868-1.938-1.938-1.938c-1.07,0-1.938,0.868-1.938,1.938v1.405h-1.018	c-1.07,0-1.938,0.868-1.938,1.938c0,1.07,0.868,1.938,1.938,1.938h1.018v1.405c0,1.07,0.868,1.938,1.938,1.938	c1.07,0,1.938-0.868,1.938-1.938V38.99H49.062z"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="linkSecItem">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 72 72">
+            <path d="M29.015 53.843l25.861-31.394C55.592 24.505 56 26.703 56 29c0 6.678-2.505 10.698-4.936 13.967-.868 1.167-1.774 2.28-2.733 3.457-3.245 3.984-7.331 9.044-8.328 15.535C39.831 63.075 38.611 65 36 65s-3.854-1.874-3.989-2.995C31.667 59.144 30.495 56.384 29.015 53.843zM37.833 36.749L26.68 50.289c-.993-1.368-2.007-2.639-2.935-3.779-.959-1.177-1.865-2.29-2.733-3.457-.525-.706-1.056-1.455-1.568-2.257l9.616-11.674C29.025 29.41 29 29.702 29 30c0 3.866 3.134 7 7 7C36.635 37 37.248 36.908 37.833 36.749zM33.813 23.353L44.18 10.768c3.621 1.631 6.664 4.307 8.758 7.645l-9.963 12.095C42.987 30.34 43 30.172 43 30c0-3.866-3.134-7-7-7C35.236 23 34.502 23.127 33.813 23.353zM27.26 24.92l-9.838 11.943C16.57 34.686 16 32.128 16 29c0-3.958 1.17-7.641 3.162-10.75L27.26 24.92zM29.842 21.785l-8.159-6.721C25.319 11.33 30.389 9 36 9c1.382 0 2.732.141 4.036.41L29.842 21.785z"></path>
+          </svg>
+        </a>
+      </div>
     </div>
-</div>
-    <section class="contact-form">
-        <form action="http://www.cursos-diseno.es/mostrar.php">
-            <div class="form-group">
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Introduzca su email" required>
-                </div>
-                <div>
-                    <label  for="telefono">Teléfono</label>
-                    <input type="text" id="telefono" name="telefono" placeholder="Introduzca su teléfono" required>
-                </div>
-            </div>
-            <label id="mensaje"  for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <img src="inferior.jpg"  class="footer-image">
-
-    <footer>
-        <p>Calle Flores 10, 50013 Zaragoza. Tlf: 555 999 666. Fax: 555 999 666. Email: email@jmr.com</p>
-    </footer>
+    <div class="contact">
+      <form method="post" action="http://www.cursos-diseno.es/mostrar.php">
+        <div class="formContact">
+          <div class="formContactItem formContactSmall">
+            <label for="contact-email">Email</label>
+            <input type="email" name="email" id="contact-email" placeholder="Introduzca su email" required/>
+          </div>
+          <div class="formContactItem formContactSmall">
+            <label for="contact-telefono">Teléfono</label>
+            <input type="text" name="telefono" id="contact-telefono" placeholder="Introduzca si telefono (opcional)" required/>
+          </div>
+          <div class="formContactItem formContactBig">
+            <label for="contact-telefono">Mensaje</label>
+            <textarea name="mensaje" id="contact-mensaje" placeholder="" rows="4" required></textarea>
+          </div>
+          <div class="formContactGrow"></div>
+          <div>
+            <input type="submit" class="submitButton" value="Enviar"/>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="mobile">
+      <p>
+        Calle Bomba 16. 50010 Saratoga. Tfno: 666 999 666.
+      </p>
+    </div>
+    <div class="screen">
+      <p>
+        Calle Bomba 16. 50010 Saratoga. Tfno: 666 999 666. Fax: 999 666 999. Email: email (at) hola.com
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
